@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplication1.Log"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Log" Height="400" Width="340" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LogBox" Grid.Column="0" Height="400" Text="Log:" VerticalAlignment="Center" Width="181" RenderTransformOrigin="1.414,0.613" HorizontalAlignment="Center" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True" TextOptions.TextHintingMode="Animated" TextWrapping="Wrap"/>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" RenderTransformOrigin="0.584,0.493">
+            <TextBlock x:Name="MatrixBox" Grid.Column="1" VerticalAlignment="Center" RenderTransformOrigin="0.389,0.465" HorizontalAlignment="Center" ScrollViewer.CanContentScroll="True" TextOptions.TextHintingMode="Animated" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="9,0,1,0" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
